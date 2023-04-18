@@ -5,7 +5,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 65vh;
 
   max-width: 500px;
   margin: 0 auto;
@@ -164,5 +164,19 @@ body {
   .egg-btn,
   .udemy-btn {
     padding: 16px 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    height: auto;
+  }
+
+  .alura-btn,
+  .egg-btn,
+  .udemy-btn {
+    margin: auto;
+    display: block;
+    margin-top: 10px;
   }
 }
