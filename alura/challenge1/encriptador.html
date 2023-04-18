@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>Encriptador De Texto</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="encriptador_style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-caja">
+        <h1>
+          <img
+            class="logo"
+            src="images_encriptador/Alura_logo.png"
+            alt="Logo de Alura"
+          />
+        </h1>
+      </div>
+    </header>
+    <main>
+      <section class="principal">
+        <textarea id="texto" placeholder="Ingresar el texto aquí"></textarea>
+        <div class="informacion">
+          <img
+            src="images_encriptador/bi_exclamation-circle-fill.png"
+            alt="Símbolo de exclamación"
+          />
+          <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones-caja">
+          <div class="encriptar-caja">
+            <button onclick="encriptar()" class="encriptar-btn">
+              Encriptar
+            </button>
+          </div>
+          <div class="desencriptar-caja">
+            <button onclick="desencriptar()" class="desencriptar-btn">
+              Desencriptar
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="rectangulo" style="display: block">
+        <div class="muneco">
+          <img
+            src="images_encriptador/Muñeco.png"
+            alt="Muñeco con lupa observando un diamante"
+          />
+        </div>
+        <div class="mensaje">
+          <h2>Ningún mensaje fue encontrado</h2>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+      </section>
+
+      <section class="resultado" style="display: none">
+        <div class="rectangulo-resultado"></div>
+        <div>
+          <textarea id="text-cifrado" readonly="true"></textarea>
+        </div>
+        <div class="copiar-caja">
+          <button onclick="copiarTexto()" class="copiar-btn">Copiar</button>
+        </div>
+      </section>
+
+      <script src="encriptador_script.js"></script>
+    </main>
+    <footer>
+      <p class="copyright">
+        Encriptador Alura Challenge &copy Jean Pierre Villarroel
+      </p>
+    </footer>
+  </body>
+</html>
