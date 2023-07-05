@@ -198,6 +198,14 @@ body {
   transform: scale(1.05);
 }
 
+.alura-btn-menu .submenu {
+  display: none;
+}
+
+.alura-btn-menu.active .submenu {
+  display: block;
+}
+
 /* Responsive */
 @media (min-width: 768px) {
   .alura-btn,
